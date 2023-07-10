@@ -1,0 +1,22 @@
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-body {
+  margin-top: 10px;
+}

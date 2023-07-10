@@ -1,0 +1,62 @@
+.sales-overlay {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Start with the drawer closed */
+  bottom: 0;
+  width: 400px; /* Adjust the width as needed */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease; /* Animation transition */
+}
+
+.sales-overlay.open-drawer {
+  right: 0; /* Slide the drawer into view */
+}
+
+.sidebar-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-close {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.side-close h5 {
+  margin: 0;
+}
+
+.manage-height {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.common-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-table-action {
+  /* Add your desired styles for table cells */
+}
+
+.fixed-content {
+  /* Add your desired styles for table cell content */
+}
+
+.no-data-table {
+  /* Add your desired styles for the "No Data Found" message */
+}
+
+.drop-button {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Add any additional styling as needed */
