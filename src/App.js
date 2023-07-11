@@ -13,7 +13,7 @@ import ManageProduct from "./components/products/ManageProduct";
 import ManagePost from "./components/posts/ManagePost";
 import AddProduct from "./components/products/AddProduct";
 import AddRowDelete from "./components/AddRowDelete";
-import ErrorPage from "./components/common/ErrorPage";
+import PageNotFound from "./components/common/PageNotFound";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
           <Route path="/addProduct" element={<AddProduct />} />
           <Route path="/apiCall" element={<AddData />} />
           <Route path="/list" element={<List />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

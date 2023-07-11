@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/Error.css";
 import { Helmet } from "react-helmet";
 
-const ErrorPage = () => {
+const PageNotFound = () => {
   return (
     <>
       <Helmet title="Page Not Found" />
@@ -21,4 +21,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default PageNotFound;
