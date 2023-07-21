@@ -3,7 +3,8 @@ import { addProduct } from "../redux/slices/ProductSlice";
 import { Button, Form } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { ToastBar, Toaster, toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "../assets/css/Product.css";
 
 const AddProduct = () => {
   const initialState = {
@@ -27,6 +28,7 @@ const AddProduct = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     await dispatch(addProduct(data));
     setData(initialState);
     toast.success("Successfully Added!");
@@ -35,53 +37,58 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="add-product-container">
-      <h2>Add Product</h2>
-      <Form className="add-product-form">
-        <Form.Control
-          type="text"
-          name="brand"
-          value={data.brand}
-          onChange={handleChange}
-          placeholder="Brand"
-        />
+    <>
+      <Link to="/productList" className="back-to-list-link">
+        <button className="back-to-list-button">Back to Products</button>
+      </Link>
+      <div className="add-product-container">
+        <h2>Add Product</h2>
+        <Form className="add-product-form">
+          <Form.Control
+            type="text"
+            name="brand"
+            value={data.brand}
+            onChange={handleChange}
+            placeholder="Brand"
+          />
 
-        <Form.Control
-          type="text"
-          name="title"
-          value={data.title}
-          onChange={handleChange}
-          placeholder="Title"
-        />
+          <Form.Control
+            type="text"
+            name="title"
+            value={data.title}
+            onChange={handleChange}
+            placeholder="Title"
+          />
 
-        <Form.Control
-          type="text"
-          name="description"
-          value={data.description}
-          onChange={handleChange}
-          placeholder="Description"
-        />
+          <Form.Control
+            type="text"
+            name="description"
+            value={data.description}
+            onChange={handleChange}
+            placeholder="Description"
+          />
 
-        <Form.Control
-          type="text"
-          name="price"
-          value={data.price}
-          onChange={handleChange}
-          placeholder="Price"
-        />
+          <Form.Control
+            type="text"
+            name="price"
+            value={data.price}
+            onChange={handleChange}
+            placeholder="Price"
+          />
 
-        <Form.Control
-          type="text"
-          name="thumbnail"
-          value={data.thumbnail}
-          onChange={handleChange}
-          placeholder="Thumbnail"
-        />
+          {/* <Form.Control
+            type="text"
+            name="thumbnail"
+            value={data.thumbnail}
+            onChange={handleChange}
+            placeholder="Thumbnail"
+          /> */}
 
-        <Button onClick={handleSubmit}>Add Product</Button>
-      </Form>
-      <Toaster position="top-right" />
-    </div>
+          <Button onClick={handleSubmit}>Add Product</Button>
+        </Form>
+        <Toaster position="top-right" />
+      </div>
+    </>
   );
 };
 

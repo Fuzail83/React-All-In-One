@@ -13,12 +13,12 @@ const ManageProduct = () => {
     dispatch(getData());
   }, []);
   return (
-    <div>
+    <>
       <Helmet title="Redux" />
-      <h2>Product List</h2>
+      <h2 className="product-listsssss">Product List</h2>
 
       <ProductList data={products} />
-    </div>
+    </>
   );
 };
 

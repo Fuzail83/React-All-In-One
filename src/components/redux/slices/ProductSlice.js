@@ -15,6 +15,16 @@ export const getData = () => async (dispatch) => {
   }
 };
 
+export const getDataById = (id) => async (dispatch) => {
+  try {
+    const response = await axios.get(`${API_URL}/${id}`).then((res) => res);
+    console.log("gggggggg", response.data);
+    dispatch(fetchProducts(response.data));
+  } catch (err) {
+    throw new Error(err);
+  }
+};
+
 export const addProduct = (product) => async (dispatch) => {
   try {
     const response = await axios.post(`${API_URL}/add`, product);
