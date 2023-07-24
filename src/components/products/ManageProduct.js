@@ -15,6 +15,7 @@ const ManageProduct = () => {
   return (
     <>
       <Helmet title="Redux" />
+
       <h2 className="product-listsssss">Product List</h2>
 
       <ProductList data={products} />

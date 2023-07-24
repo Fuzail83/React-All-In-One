@@ -9,12 +9,7 @@ const Footer = () => {
           {/* Add your logo or company name */}
           {/* <h1>Logo</h1> */}
         </div>
-        <ul className="footer-links">
-          <li className="footer-link">Home</li>
-          <li className="footer-link">About</li>
-          <li className="footer-link">Services</li>
-          <li className="footer-link">Contact</li>
-        </ul>
+
         {/* <div className="footer-social-media"> */}
         {/* Add social media icons */}
         {/* <span className="social-media-icon">Facebook</span>

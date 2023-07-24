@@ -33,6 +33,9 @@ const Header = () => {
             <Link to="/addrowdelete">
               <li className="nav-item">Add Row </li>
             </Link>
+            <Link to="/toggle">
+              <li className="nav-item">Toggle </li>
+            </Link>
 
             {/* <Link to="/apiCall">
               <li className="nav-item">JSON Server Api Call</li>

@@ -15,6 +15,7 @@ import AddProduct from "./components/products/AddProduct";
 import AddRowDelete from "./components/AddRowDelete";
 import PageNotFound from "./components/common/PageNotFound";
 import ViewProducts from "./components/products/ViewProducts";
+import Toggling from "./components/Toggling";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/apiCall" element={<AddData />} />
           <Route path="/list" element={<List />} />
           <Route path="*" element={<PageNotFound />} />
+          <Route path="toggle" element={<Toggling />} />
         </Routes>
         <Footer />
       </BrowserRouter>
