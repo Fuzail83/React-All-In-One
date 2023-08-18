@@ -8,7 +8,7 @@ const PageNotFound = () => {
       <Helmet title="Page Not Found" />
       <div className="error-container">
         <div className="error-content">
-          <h1 className="error-title">Oops!</h1>
+          <h1 className="error-title">Oops! Page Not Found</h1>
           <p className="error-message">
             We're sorry, but something went wrong.
           </p>

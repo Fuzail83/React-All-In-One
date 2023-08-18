@@ -16,8 +16,10 @@ const Toggling = () => {
     setButtonToggle(!buttonToggle);
   };
 
-  const handleCheckBoxToggle = () => {
-    setCheckBoxToggle(!checkBoxToggle);
+  const handleCheckBoxToggle = (prevState) => {
+    console.log("prevState", prevState);
+    setCheckBoxToggle((prevState) => !prevState);
+    // setCheckBoxToggle(!checkBoxToggle);
   };
 
   // Image Toggle

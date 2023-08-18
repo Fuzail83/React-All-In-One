@@ -16,6 +16,7 @@ import AddRowDelete from "./components/AddRowDelete";
 import PageNotFound from "./components/common/PageNotFound";
 import ViewProducts from "./components/products/ViewProducts";
 import Toggling from "./components/Toggling";
+import MultipleImagesUpload from "./components/MultipleImagesUpload";
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
           <Route path="/list" element={<List />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="toggle" element={<Toggling />} />
+          <Route
+            path="mulitpleImagesUpload"
+            element={<MultipleImagesUpload />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>
