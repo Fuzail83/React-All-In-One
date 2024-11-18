@@ -22,19 +22,15 @@ const Toggling = () => {
     // setCheckBoxToggle(!checkBoxToggle);
   };
 
-  // Image Toggle
   const imageLogoToggle = () => {
     setIsImageLogo(!isImageLogo);
     setSelectedImage(null);
     setImagePreview(false);
   };
 
-  // Image Upload Method
-
   const handleImageUpload = (e) => {
     const file = e.target?.files?.[0];
     if (file) {
-      // Create a FileReader to read the image data
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = () => {
@@ -44,23 +40,20 @@ const Toggling = () => {
     }
   };
 
-  // Remove Image
   const handleImageRemove = () => {
     setSelectedImage(null);
-    // clear the value of image name
+
     const fileInput = document.getElementById("image-input");
     if (fileInput) {
       fileInput.value = "";
     }
   };
 
-  // Image preview
   const handleImagePreview = () => {
     setImagePreview(selectedImage);
     setImagePreview(true);
   };
 
-  // Close Image Preview Modal
   const handleImagePreviewClose = () => {
     setImagePreview(false);
   };

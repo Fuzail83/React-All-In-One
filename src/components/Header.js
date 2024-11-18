@@ -12,8 +12,14 @@ const Header = () => {
             {/* <h1>Logo</h1> */}
           </div>
           <ul className="nav-menu">
+            <Link to="/ContactUs">
+              <li className="nav-item">Contact Us </li>
+            </Link>
+            <Link to="/crankwheel">
+              <li className="nav-item">Crankwheel </li>
+            </Link>
             <Link to="/">
-              <li className="nav-item">Home</li>
+              <li className="nav-item">Home </li>
             </Link>
             <Link to="/about">
               <li className="nav-item">About</li>
@@ -39,7 +45,19 @@ const Header = () => {
             <Link to="/mulitpleImagesUpload">
               <li className="nav-item">Multiple Image Upload </li>
             </Link>
+            <Link to={`/tabing/tab1`}>
+              <li className="nav-item">Tabing </li>
+            </Link>
 
+            <Link to={`/withoutjsx`}>
+              <li className="nav-item">WithoutJSX </li>
+            </Link>
+            <Link to={`/slider`}>
+              <li className="nav-item">Slider </li>
+            </Link>
+            <Link to={`/draggable`}>
+              <li className="nav-item">Draggable Modal </li>
+            </Link>
             {/* <Link to="/apiCall">
               <li className="nav-item">JSON Server Api Call</li>
             </Link>

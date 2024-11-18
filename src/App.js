@@ -17,6 +17,12 @@ import PageNotFound from "./components/common/PageNotFound";
 import ViewProducts from "./components/products/ViewProducts";
 import Toggling from "./components/Toggling";
 import MultipleImagesUpload from "./components/MultipleImagesUpload";
+import Tabing from "./components/Tabing";
+import WithoutJSX from "./components/WithoutJSX";
+import Slider from "./components/Slider";
+import CrankWheelComponent from "./components/Crankwheel";
+import ContactUs from "./components/ContactUs";
+import DraggableModal from "./components/DraggableModal";
 
 function App() {
   return (
@@ -41,6 +47,12 @@ function App() {
             path="mulitpleImagesUpload"
             element={<MultipleImagesUpload />}
           />
+          <Route path="tabing/:tabName" element={<Tabing />} />
+          <Route path="/withoutjsx" element={<WithoutJSX />} />
+          <Route path="/slider" element={<Slider />} />
+          <Route path="/crankwheel" element={<CrankWheelComponent />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/draggable" element={<DraggableModal />} />
         </Routes>
         <Footer />
       </BrowserRouter>

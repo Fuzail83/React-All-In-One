@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const MultipleImagesUpload = () => {
   const [uploadedImages, setUploadedImages] = useState([]);
@@ -38,6 +39,7 @@ const MultipleImagesUpload = () => {
   };
   return (
     <div>
+      <Helmet title="File Upload" />
       <h2>Multiple Image Upload</h2>
       <input
         type="file"
